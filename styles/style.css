@@ -240,10 +240,9 @@ h6 {
 /* Footer styles
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .footer--bg {
-  background: url(/assets/mobile/image-footer.jpg) no-repeat center top/cover;
+  --overlay: linear-gradient(hsl(192, 37%, 48%, .85), hsl(192, 37%, 48%, .85));
+  background: var(--overlay), url(/assets/mobile/image-footer.jpg) no-repeat center top/cover;
   min-height: 42.8rem;
-  background-color: var(--color-primary-teal);
-  background-blend-mode: soft-light;
 }
 
 .footer {
@@ -304,9 +303,7 @@ h6 {
   }
 
   .footer--bg {
-    background: url(/assets/tablet/image-footer.jpg) no-repeat center top/cover;
-    background-color: var(--color-primary-teal);
-    background-blend-mode: soft-light;
+    background: var(--overlay), url(/assets/tablet/image-footer.jpg) no-repeat center top/cover;
     min-height: 50rem;
   }
 }
@@ -350,9 +347,7 @@ h6 {
   }
 
   .footer--bg {
-    background: url(/assets/desktop/image-footer.jpg) no-repeat center top/cover;
-    background-color: var(--color-primary-teal);
-    background-blend-mode: soft-light;
+    background: var(--overlay), url(/assets/desktop/image-footer.jpg) no-repeat center top/cover;
     min-height: 30.8rem;
   }
 
